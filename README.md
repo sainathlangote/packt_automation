@@ -22,23 +22,11 @@ In this project, we have implemented a hybrid framework for Selenium test automa
 To set up and run this Selenium Java hybrid framework, please follow these installation instructions:
 
 ### Prerequisites
-- Java Development Kit (JDK) - Install the latest version (https://www.oracle.com/java/technologies/javase-downloads.html)
-- Eclipse IDE (https://www.eclipse.org/downloads/)
+- Java Development Kit (JDK) - Install the java version 11 (https://www.oracle.com/java/technologies/javase-downloads.html)
+- intelleji IDE (
 - Selenium WebDriver - Download Selenium WebDriver JAR files (https://www.selenium.dev/downloads/)
 - TestNG - Install TestNG from the Eclipse Marketplace or download it (https://testng.org/doc/download.html)
 
-### Steps
-1. Clone this repository to your local machine.
-
-   ```shell
-   git clone https://github.com/yourusername/your-project.git
-
-
-
-Certainly, here's an example README file for a hybrid framework using Selenium in Java:
-
-markdown
-Copy code
 # Hybrid Selenium Framework - README
 
 ## 4a. Reasoning for the Choice of Hybrid Framework
@@ -50,35 +38,6 @@ In this project, we have implemented a hybrid framework for Selenium test automa
 - It allows us to separate test data, test scripts, and keywords, making maintenance and scalability easier.
 - Java is a popular language for Selenium automation, offering a wide range of libraries and tools for efficient testing.
 
-## 4b. Installation Instructions
-
-To set up and run this Selenium Java hybrid framework, please follow these installation instructions:
-
-### Prerequisites
-- Java Development Kit (JDK) - Install the latest version (https://www.oracle.com/java/technologies/javase-downloads.html)
-- Eclipse IDE (https://www.eclipse.org/downloads/)
-- Selenium WebDriver - Download Selenium WebDriver JAR files (https://www.selenium.dev/downloads/)
-- TestNG - Install TestNG from the Eclipse Marketplace or download it (https://testng.org/doc/download.html)
-
-### Steps
-1. Clone this repository to your local machine.
-
-   ```shell
-   git clone https://github.com/yourusername/your-project.git
-Import the project into Eclipse as a Java project.
-
-Add the Selenium WebDriver JAR files to the project's build path.
-
-Install the TestNG plugin for Eclipse (if not already installed).
-
-4c. Instructions to Run Your Test Cases
-To execute the test cases using the hybrid framework, follow these steps:
-
-Open Eclipse and import the project.
-
-Navigate to the "testcases" package within the project, and open a test case file (e.g., LoginTest.java).
-
-Right-click on the test case file and select "Run As" > "TestNG Test."
 
 TestNG will execute the test case, and the results will be displayed in the Eclipse console.
 
