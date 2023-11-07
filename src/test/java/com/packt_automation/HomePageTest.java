@@ -4,9 +4,9 @@ import com.packt_automation.pages.HomePage;
 import com.packt_automation.pages.LoginPage;
 import com.packt_automation.utility.BaseClass;
 import com.packt_automation.utility.PropertyHandling;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
+
 
 import java.io.IOException;
 import java.util.List;

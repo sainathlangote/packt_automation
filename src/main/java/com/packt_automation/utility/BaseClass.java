@@ -55,7 +55,7 @@ public class BaseClass {
         }
     }
     public void waitForElement(By by){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(25));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(by));
     }
 
