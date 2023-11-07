@@ -7,7 +7,6 @@ import com.packt_automation.utility.PropertyHandling;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
-
 import java.io.IOException;
 import java.util.List;
 
@@ -25,7 +24,6 @@ public class HomePageTest extends BaseClass {
 
     @AfterClass
     public void tearDown() throws InterruptedException {
-//        Thread.sleep(3000);
         driver.quit();
     }
 
@@ -67,58 +65,6 @@ public class HomePageTest extends BaseClass {
         }
     }
 
-    public void checkElementAttributes(WebElement element) {
-        int elementPositionX = element.getLocation().getX();
-        int elementPositionY = element.getLocation().getY();
-        System.out.println("Element Position: X=" + elementPositionX + ", Y=" + elementPositionY);
-
-        String elementColor = element.getCssValue("color");
-        System.out.println("Element Color: " + elementColor);
-
-        String elementText = element.getText();
-        if (!elementText.isBlank()) {
-            System.out.println("Element Text: " + elementText);
-        }
-    }
-
-    @Test
-    public void checkAllModule() throws InterruptedException {
-        homePage = new HomePage();
-        System.out.println("Landed on homepage " + homePage);
-        waitForElement(homePage.navBarElements);
-        List<WebElement> allModules = driver.findElements(homePage.navBarElements);
-        System.out.println(allModules.size());
-        String homePage = driver.getTitle();
-        for (WebElement module : allModules) {
-//            String url = module.getAttribute("href");
-            module.click();
-            System.out.println("Page title is " + driver.getTitle());
-            Thread.sleep(4000);
-            driver.navigate().back();
-            System.out.println(driver.getTitle());
-
-
-        }
-    }
-
-    @Test
-    public void ClickAndGetTitleOfElements() {
-        homePage = new HomePage();
-
-        List<WebElement> allModules = driver.findElements(homePage.navBarElements);
-        System.out.println(allModules.size());
-
-        for (WebElement element : allModules) {
-            try {
-                element.click();
-                System.out.println("Clicked on element with tag: " + element.getTagName());
-                System.out.println("Title attribute: " + element.getAttribute("title"));
-            } catch (Exception e) {
-                System.out.println("Unable to click on element with tag: " + element.getTagName());
-            }
-        }
-
-    }
 }
 
 

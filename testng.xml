@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.packt_automation.utility.TestListner"></listener>
+    </listeners>
+    <test name="packt">
+        <classes>
+            <class name="com.packt_automation.HomePageTest"></class>
+            <class name="com.packt_automation.ClickAndGetTitleOfElements"></class>
+            <class name="com.packt_automation.ViewAllBooks"></class>
+            <class name="com.packt_automation.CarouselOfBooks"></class>
+        </classes>
+    </test>
+
+</suite>

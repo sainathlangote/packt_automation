@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ViewAllBooks extends BaseClass {
+
     PropertyHandling propertyHandling;
     LoginPage loginPage;
     HomePage homePage;
@@ -45,7 +46,7 @@ public class ViewAllBooks extends BaseClass {
     @Test
     public void searchBooks() throws InterruptedException {
 
-        viewAllBookPage= new ViewAllBookPage();
+        viewAllBookPage = new ViewAllBookPage();
         click(viewAllBookPage.viewAll);
         click(viewAllBookPage.browseLibrary);
         click(viewAllBookPage.resetAllFilter);
@@ -75,7 +76,7 @@ public class ViewAllBooks extends BaseClass {
 
             for (int j = 1; j <= pagination.size(); j++) {
                 System.out.println("------------------------------------------------------------");
-                System.out.println("Page no "+j);
+                System.out.println("Page no " + j);
                 System.out.println("------------------------------------------------------------");
                 nameOfBooks = driver.findElements(viewAllBookPage.bookResults);
                 for (int i = 0; i < nameOfBooks.size(); i++) {
